@@ -25,7 +25,7 @@ async def on_ready():
 client.run(os.getenv("TOKEN"), bot=False)
 ```
 
-Put your token instead of `TOKEN` in [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) and run the file.
+This Code is from [this tutorial](https://youtu.be/KzRaSfBHAYc). If you have any doubts regarding this, feel free to [contact me](https://dcs.gg/phantom).
 
 **DO NOT GIVE YOUR TOKEN TO OTHERS!**
 
