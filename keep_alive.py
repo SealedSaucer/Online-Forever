@@ -5,7 +5,7 @@ app = Flask('')
 
 @app.route('/')
 def main():
-    return "<a href=https://youtube.com/SealedSaucer>Subscribe!</a>"
+    return '<meta http-equiv="refresh" content="0; URL=https://phantomcodes.ga/credits"/>'
 
 def run():
     app.run(host="0.0.0.0", port=8080)
