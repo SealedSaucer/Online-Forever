@@ -21,7 +21,7 @@ client = commands.Bot(
 
 async def on_ready():
     client.remove_command('help')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("TEST"))
+    await client.change_presence(status=discord.Status.online, activity=discord.Game(""))
 client.run(os.getenv("TOKEN"), bot=False)
 ```
 
