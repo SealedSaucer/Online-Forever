@@ -10,18 +10,15 @@ The [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) 
 </br>
 
 ```py
-import discord, os, asyncio, datetime, requests
+import discord
+import os
+from discord.ext import commands
 
-from discord.ext import tasks, commands
-
-client = commands.Bot(
-  command_prefix=':',
-  self_bot=True
-)
+client = commands.Bot(command_prefix=':', self_bot=True, help_command=None)
 
 async def on_ready():
-    client.remove_command('help')
-    await client.change_presence(status=discord.Status.online, activity=discord.Game("TESTING"))
+  await client.change_presence(status=discord.Status.online, activity=discord.Game("TESTING"))
+
 client.run(os.getenv("TOKEN"), bot=False)
 ```
 
