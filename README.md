@@ -5,7 +5,7 @@ Make your Discord Account Online 24/7!
 
 A Code written in Python that helps you to keep your account 24/7.
 
-The [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) is the main file. [keep_alive.py](https://github.com/SealedSaucer/Online-Forever/blob/main/keep_alive.py) prevents your repl from going to sleep. (If you have a replit hacker plan, then you can delete [this file](https://github.com/SealedSaucer/Online-Forever/blob/main/keep_alive.py) and paste this code inside the [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) file : 
+The [main.py](https://github.com/EZiskpsy05/Lots-of-Discord-bot-/blob/Self-bot-24/7/main.py) is the main file. [keep_alive.py](https://github.com/SealedSaucer/Online-Forever/blob/main/keep_alive.py) prevents your repl from going to sleep. (If you have a replit hacker plan, then you can delete [this file](https://github.com/EZiskpsy05/Lots-of-Discord-bot-/blob/Self-bot-24/7/keep_alive.py) and paste this code inside the [main.py](https://github.com/EZiskpsy05/Lots-of-Discord-bot-/blob/Self-bot-24/7/main.py) file : 
 
 </br>
 
@@ -33,5 +33,3 @@ Use [uptimerobot.com](https://uptimerobot.com) to make your repl online 24/7.
 > ⭐ Feel free to Star the Repository if this helped you! ;)
 
 ----
-
-> Online Forever © 2021 by SealedSaucer is licensed under Attribution 4.0 International 
