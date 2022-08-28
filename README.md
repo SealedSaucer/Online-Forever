@@ -22,7 +22,7 @@ async def on_ready():
   os.system('clear')
   print(f'Logged in as {client.user} (ID: {client.user.id})')
 
-client.run(os.getenv("TOKEN"), bot=False)
+client.run(os.getenv("TOKEN"))
 ```
 
 This code is from [this tutorial](https://youtu.be/yfgEbZAXMAQ). If you have any issues or doubts regarding this, feel free to [contact me](https://dsc.gg/phantom).
