@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "Online-Forever"
+version = "0.1.0"
+description = "A code that can make your discord account 24/7!"
+authors = ["SealedSaucer"]
+
+[tool.poetry.dependencies]
+python = ">=3.8.0,<3.9"
+numpy = "^1.22.2"
+replit = "^3.2.4"
+PyNaCl = "^1.5.0"
+Flask = "^2.2.1"
+"discord.py-self" = {git = "https://github.com/dolfies/discord.py-self"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
