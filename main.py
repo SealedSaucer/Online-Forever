@@ -12,4 +12,4 @@ async def on_ready():
   print(f'Logged in as {client.user} (ID: {client.user.id})')
 
 keep_alive()
-client.run(os.getenv("TOKEN"), bot=False)
+client.run(os.getenv("TOKEN"))
