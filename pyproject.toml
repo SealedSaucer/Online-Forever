@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Online-Forever"
-version = "0.1.0"
+version = "1.0.0"
 description = "A code that can make your discord account 24/7!"
 authors = ["SealedSaucer"]
 
