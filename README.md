@@ -14,19 +14,38 @@ The [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) 
 </br>
 
 ```py
-import discord
+import json
+import time
+import websocket
+import requests
 import os
-from discord.ext import commands
 
-client = commands.Bot(command_prefix=':', self_bot=True, help_command=None)
+status = "online"
 
-@client.event
-async def on_ready():
-  await client.change_presence(status=discord.Status.online)
-  os.system('clear')
-  print(f'Logged in as {client.user} (ID: {client.user.id})')
+headers = {"Authorization": os.getenv("TOKEN"), "Content-Type": "application/json"}
+userinfo = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers).json()
+username = userinfo["username"]
+discriminator = userinfo["discriminator"]
+userid = userinfo["id"]
 
-client.run(os.getenv("TOKEN"))
+def onliner(token, status):
+    ws = websocket.WebSocket()
+    ws.connect('wss://gateway.discord.gg/?v=9&encoding=json')
+    start = json.loads(ws.recv())
+    heartbeat = start['d']['heartbeat_interval']
+    auth = {"op": 2,"d": {"token": token,"properties": {"$os": "Windows 10","$browser": "Google Chrome","$device": "Windows"},"presence": {"status": status,"afk": False}},"s": None,"t": None}
+    ws.send(json.dumps(auth))
+    online = {"op":1,"d":"None"}
+    time.sleep(heartbeat / 1000)
+    ws.send(json.dumps(online))
+
+def run_onliner():
+  print(f"Logged in as {username}#{discriminator} ({userid}).")
+  while True:
+    onliner(os.getenv("TOKEN"), status)
+    time.sleep(30)
+
+run_onliner()
 ```
 
 This code is from [this tutorial](https://youtu.be/yfgEbZAXMAQ). If you have any issues or doubts regarding this, feel free to [contact me](https://dsc.gg/phantom).
