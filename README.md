@@ -48,7 +48,7 @@ def run_onliner():
 run_onliner()
 ```
 
-This code is from [this tutorial](https://youtu.be/yfgEbZAXMAQ). If you have any issues or doubts regarding this, feel free to [contact me](https://dsc.gg/phantom).
+This code is from [this tutorial](https://www.youtube.com/watch?v=-soq0pOqP_4). If you have any issues or doubts regarding this, feel free to [contact me](https://dsc.gg/phantom).
 
 ---
 
