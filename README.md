@@ -1,5 +1,5 @@
 # Online-Forever
-Make your Discord Account 24/7 Online!
+Make Your Discord Account 24/7 Online!
 
 ----
 
