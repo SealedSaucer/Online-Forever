@@ -6,8 +6,11 @@ import os
 from keep_alive import keep_alive
 
 status = "online"
+usertoken = os.getenv("TOKEN")
+if not usertoken:
+  raise Exception("No token provided.")
 
-headers = {"Authorization": os.getenv("TOKEN"), "Content-Type": "application/json"}
+headers = {"Authorization": usertoken, "Content-Type": "application/json"}
 userinfo = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers).json()
 username = userinfo["username"]
 discriminator = userinfo["discriminator"]
@@ -28,7 +31,7 @@ def run_onliner():
   os.system("clear")
   print(f"Logged in as {username}#{discriminator} ({userid}).")
   while True:
-    onliner(os.getenv("TOKEN"), status)
+    onliner(usertoken, status)
     time.sleep(30)
 
 keep_alive()
