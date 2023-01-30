@@ -52,14 +52,20 @@ This code is from [this tutorial](https://www.youtube.com/watch?v=-soq0pOqP_4). 
 
 ---
 
+> **Warning**
+> : Self-bots are discouraged by Discord and is against Discord's ToS. You might get banned for this if not used properly.
+
+> **Note**
+> : Discord's Terms of Service: [discord.com/terms](https://discord.com/terms)
+
+#### This repository is in no way affiliated with, authorized, maintained, sponsored or endorsed by Discord Inc. (discord.com) or any of its affiliates or subsidiaries.
+
+---
+
 ### DO NOT GIVE YOUR TOKEN TO OTHERS!
 
 #### Giving your token to someone else will give them the ability to log into your account without the password or 2FA.
 
 ---
 
-> ⭐ Feel free to Star the Repository if this helped you! ;)
-
-----
-
-> Online Forever by SealedSaucer is licensed under Attribution 4.0 International 
+> ⭐ Feel free to star the repository if this helped you! ;)
