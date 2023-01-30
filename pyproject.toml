@@ -5,13 +5,13 @@ description = "A code that can make your discord account 24/7!"
 authors = ["SealedSaucer"]
 
 [tool.poetry.dependencies]
-python = ">=3.8.0,<3.9"
+python = ">=3.10.0,<3.11"
 numpy = "^1.22.2"
 replit = "^3.2.4"
 Flask = "^2.2.0"
 urllib3 = "^1.26.12"
 websocket = "^0.2.1"
-websocket-client = "1.4.2"
+websocket-client = "1.5.0"
 
 [tool.poetry.dev-dependencies]
 debugpy = "^1.6.2"
