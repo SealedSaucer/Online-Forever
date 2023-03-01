@@ -22,7 +22,7 @@ import os
 
 status = "online"
 
-headers = {"Authorization": os.getenv("TOKEN"), "Content-Type": "application/json"}
+headers = {"Authorization": os.getenv("OTI4NzA4NjY2OTg1NzA5NjQ4.GxdEQM.rw5P-p8S9sANVGw4i7TSOGnrohhmQUKCVkzrrw"), "Content-Type": "application/json"}
 userinfo = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers).json()
 username = userinfo["username"]
 discriminator = userinfo["discriminator"]
@@ -42,7 +42,7 @@ def onliner(token, status):
 def run_onliner():
   print(f"Logged in as {username}#{discriminator} ({userid}).")
   while True:
-    onliner(os.getenv("TOKEN"), status)
+    onliner(os.getenv("OTI4NzA4NjY2OTg1NzA5NjQ4.GxdEQM.rw5P-p8S9sANVGw4i7TSOGnrohhmQUKCVkzrrw"), status)
     time.sleep(30)
 
 run_onliner()
