@@ -14,15 +14,27 @@ The [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) 
 </br>
 
 ```py
+import os
+import sys
 import json
 import time
-import websocket
 import requests
-import os
+import websocket
 
 status = "online"
 
-headers = {"Authorization": os.getenv("TOKEN"), "Content-Type": "application/json"}
+usertoken = os.getenv("TOKEN")
+if not usertoken:
+  print("[ERROR] Please add a token inside Secrets.")
+  sys.exit()
+
+headers = {"Authorization": usertoken, "Content-Type": "application/json"}
+
+validate = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers)
+if validate.status_code != 200:
+  print("[ERROR] Your token might be invalid. Please check it again.")
+  sys.exit()
+
 userinfo = requests.get('https://discordapp.com/api/v9/users/@me', headers=headers).json()
 username = userinfo["username"]
 discriminator = userinfo["discriminator"]
@@ -40,9 +52,10 @@ def onliner(token, status):
     ws.send(json.dumps(online))
 
 def run_onliner():
+  os.system("clear")
   print(f"Logged in as {username}#{discriminator} ({userid}).")
   while True:
-    onliner(os.getenv("TOKEN"), status)
+    onliner(usertoken, status)
     time.sleep(30)
 
 run_onliner()
