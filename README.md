@@ -23,10 +23,7 @@ import websocket
 
 status = "online"
 
-usertoken = os.getenv("TOKEN")
-if not usertoken:
-  print("[ERROR] Please add a token inside Secrets.")
-  sys.exit()
+usertoken = "Add your token here"
 
 headers = {"Authorization": usertoken, "Content-Type": "application/json"}
 
@@ -52,7 +49,6 @@ def onliner(token, status):
     ws.send(json.dumps(online))
 
 def run_onliner():
-  os.system("clear")
   print(f"Logged in as {username}#{discriminator} ({userid}).")
   while True:
     onliner(usertoken, status)
