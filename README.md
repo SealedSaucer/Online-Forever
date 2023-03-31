@@ -14,7 +14,6 @@ The [main.py](https://github.com/SealedSaucer/Online-Forever/blob/main/main.py) 
 </br>
 
 ```py
-import os
 import sys
 import json
 import time
