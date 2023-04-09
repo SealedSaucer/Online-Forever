@@ -7,7 +7,7 @@ import websocket
 from keep_alive import keep_alive
 
 status = "online"
-
+custom_status = "Set custom Status"
 usertoken = os.getenv("TOKEN")
 if not usertoken:
   print("[ERROR] Please add a token inside Secrets.")
@@ -35,6 +35,9 @@ def onliner(token, status):
     online = {"op":1,"d":"None"}
     time.sleep(heartbeat / 1000)
     ws.send(json.dumps(online))
+    status = {"op":3,"d":{"status": status,"since":0,"activities":[{"name":"Custom Status","type":4,"state": custom_status,"emoji":{"id": None,"name":"😘","animated": False}}],"afk": False}}
+    time.sleep(heartbeat / 1000)
+    ws.send(json.dumps(status))
 
 def run_onliner():
   os.system("clear")
