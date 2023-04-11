@@ -8,7 +8,7 @@ from keep_alive import keep_alive
 
 status = "dnd"
 
-custom_status = "youtube.com/@SealedSaucer"
+custom_status = "youtube.com/@SealedSaucer" #If you don't need a custom status on your profile, just put "" instead of "youtube.com/@SealedSaucer"
 
 usertoken = os.getenv("TOKEN")
 if not usertoken:
