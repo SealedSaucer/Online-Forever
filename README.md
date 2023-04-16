@@ -144,6 +144,13 @@ run_onliner()
 9. Once the packages are downloaded, either double click the python file inorder to run it or open command prompt where the python file is present and run `python filename.py`
 
 ## Known Errors And How To Fix Them
+### [Discord] Status mode not changing
+<details>
+<summary>Click here to view the explanation and fix</summary>
+<br>
+Just wait for a few minutes. It takes some time for discord to refresh your statuses.
+</details>
+
 ### [Replit] This repository could not be accessed, try again later/This repository possibly violates our Terms of Service. Contact support if you believe this is a mistake.
 <details>
 <summary>Click here to view the explanation and fix</summary>
