@@ -17,8 +17,8 @@ If you want to online tokens in bulk, consider checking out my store: <b><a href
 </p>
 
 ## Disclaimer
-By using this code, you are automating your Discord Account. This is against Discord's Terms of Service and Community Guidelines. If not used properly, your account(s) might get suspended or terminated by Discord. I, the developer, is not responsible for any consequences that may arise from the use of this code. Use this software at your own risk and responsibility. Learn more about <a href="https://discord.com/terms">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a> here.
-#### This repository is in no way affiliated with, authorized, maintained, sponsored or endorsed by Discord Inc. (discord.com) or any of its affiliates or subsidiaries.
+By using this code, you are automating your Discord Account. This is against Discord's Terms of Service and Community Guidelines. If not used properly, your account(s) might get suspended or terminated by Discord. I, the developer, am not responsible for any consequences that may arise from the use of this code. Use this software at your own risk and responsibility. Learn more about <a href="https://discord.com/terms">Discord's Terms of Service</a> and <a href="https://discord.com/guidelines">Community Guidelines</a> here.
+#### This repository is in no way affiliated with, authorized, maintained, sponsored, or endorsed by Discord Inc. (discord.com) or any of its affiliates or subsidiaries.
 
 ## Warning
 **DO <ins>NOT</ins> GIVE YOUR DISCORD TOKENS TO ANYONE.**
@@ -49,7 +49,7 @@ By using this code, you are automating your Discord Account. This is against Dis
 1. Install [Python](https://python.org/downloads) on your machine (Make sure you add it to [PATH](https://i.imgur.com/Ukl6HdQ.png))
 2. Copy the code below
 <details>
-<summary> Click here to view the code, click again to close it</summary>
+<summary> Click here to view the code, and click again to close it</summary>
 <br>
 
 ```py
@@ -138,17 +138,17 @@ run_onliner()
 3. Create a new Python file and paste the code into it
 4. Modify both the status mode and custom status, if you want to make any adjustments
 5. Save the file
-6. Create a `requirements.txt` file and copy paste the file contents inside [requirements.txt](https://github.com/SealedSaucer/Online-Forever/blob/main/requirements.txt) without the `Flask` module
+6. Create a `requirements.txt` file and copy and paste the file contents inside [requirements.txt](https://github.com/SealedSaucer/Online-Forever/blob/main/requirements.txt) without the `Flask` module
 7. Save the file
 8. Open command prompt where both the files are present and run `pip install -r requirements.txt`
-9. Once the packages are downloaded, either double click the python file inorder to run it or open command prompt where the python file is present and run `python filename.py`
+9. Once the packages are downloaded, either double-click the python file in order to run it or open command prompt where the python file is present and run `python filename.py`
 
 ## Known Errors And How To Fix Them
 ### [Discord] Status mode not changing
 <details>
 <summary>Click here to view the explanation and fix</summary>
 <br>
-Just wait for a few minutes. It takes some time for discord to refresh your statuses.
+Just wait for a few minutes. It takes some time for Discord to refresh your status.
 </details>
 
 ### [Replit] This repository could not be accessed, try again later/This repository possibly violates our Terms of Service. Contact support if you believe this is a mistake.
@@ -169,7 +169,7 @@ You cloned it into a bash repl. Make sure you select "Python" from the languages
 <details>
 <summary>Click here to view the explanation and fix</summary>
 <br>
-This happens because repls have Shared Public IP Addresses, and some Replit Users abuse the platform to spam (through selfbots or nukers). Whenever Discord sees lots of invalid requests coming from a single IP address, they will use Cloudflare to temporarily block any incoming requests.
+This happens because repls have Shared Public IP Addresses, and some Replit Users abuse the platform to spam (through self bots or nukers). Whenever Discord sees lots of invalid requests coming from a single IP address, it will use Cloudflare to temporarily block any incoming requests.
 
 #### Fix:
 - Go to shell
