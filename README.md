@@ -192,7 +192,7 @@ Run <code>pip install websocket-client</code> in the shell
 </details>
 
 ## Help and Support
-If you have any issues or doubts regarding this, feel free to [contact me](https://dsc.gg/phantom).
+If you have any issues or doubts regarding this, feel free to [contact me](https://phantom.is-a.dev/verify).
 
 ---
 
