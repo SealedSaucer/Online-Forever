@@ -3,7 +3,7 @@
     <p>Make Your Discord Account 24/7 Online!</p>
     <a href="https://github.com/SealedSaucer/Online-Forever/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SealedSaucer/Online-Forever?style=for-the-badge"></a>
     <a href="https://phantom.sellix.io/"><img src="https://img.shields.io/badge/SELLIX-PHANTOM.SELLIX.IO-5e40e4?style=for-the-badge"></a>
-    <a href="https://phantom.is-a.dev/verify"><img src="https://img.shields.io/badge/CONTACT-click me-05babf?style=for-the-badge"></a>
+    <a href="https://phantom.is-a.dev/verify"><img src="https://img.shields.io/badge/contact-click me-05babf?style=for-the-badge"></a>
     <br>
     <img src="https://i.imgur.com/N61T21L.png" height="210">
 </div>
