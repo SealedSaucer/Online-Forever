@@ -201,14 +201,7 @@ Run <code>pip install websocket</code> in the shell
 <details>
 <summary>Click here to view the explanation and fix</summary>
 <br>
-Run 
-```bash
-pip uninstall websocket
-pip uninstall websocket-client
-pip install websocket-client
-```
-in the shell, this should reset it to have the proper dependencies. 
-
+Run <code>pip install websocket-client</code> in the shell
 </details>
 
 ## Help and Support
