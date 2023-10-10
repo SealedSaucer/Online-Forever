@@ -24,24 +24,24 @@ By using this code, you are automating your Discord Account. This is against Dis
 **DO <ins>NOT</ins> GIVE YOUR DISCORD TOKENS TO ANYONE.**
 #### Giving your token to someone else will give them the ability to log into your account without the password or 2FA.
 
-## Obtaining your Token
-You will need your token to use this bot. You can obtain it (as of September 21, 2023) by doing the following:
-1. Logging in to your discord
-2. Pressing Ctrl+Shift+i to open Chrome developer tools
-3. Go to the "Network" Tab
-4. Keeping it open, refresh the page
-5. Type "/api" in the filter search box
-6. Click the entry that has "library" in the title (It may also have "country_code=")
-7. On the sub-menu, go to the "Heaaders"
-8. Select the text directly to the right of the "Authorization" item. Make sure to select the entire line.
-9. This is your token, DO NOT GIVE IT TO ANYONE.
-
-## Features:
+## Features
 - 🔒 Secure
 - Supports Custom Status
 - Account will stay 24/7 online (if you set it up correctly)
 - Supports all three status modes (Online, Idle, Do Not Disturb)
 - Can be used almost on any platform that supports [Python](https://python.org)
+
+## Obtaining Your Token ([Video Guide](https://www.youtube.com/watch?v=sYGdDLLu8cU))
+You will need an user token inorder to use this code. You can obtain it by doing the following:
+1. Logging in to your discord account
+2. Pressing `Ctrl+Shift+I` to open Chrome Developer Tools
+3. Go to the `Network` Tab
+4. Keep it open and refresh the page
+5. Type `/api` in the filter search box
+6. Click the entry that has `science` as the `Name`
+7. On the sub-menu, go to `Headers`
+8. Scroll down till you see an entry named `Authorization`. Copy the line next to it.
+9. This is your token, <ins>**DO NOT GIVE IT TO ANYONE**</ins>.
 
 ## Installation
 ### · Replit
