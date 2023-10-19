@@ -17,12 +17,12 @@ if not usertoken:
 
 headers = {"Authorization": usertoken, "Content-Type": "application/json"}
 
-validate = requests.get("https://discordapp.com/api/v9/users/@me", headers=headers)
+validate = requests.get("https://canary.discordapp.com/api/v9/users/@me", headers=headers)
 if validate.status_code != 200:
     print("[ERROR] Your token might be invalid. Please check it again.")
     sys.exit()
 
-userinfo = requests.get("https://discordapp.com/api/v9/users/@me", headers=headers).json()
+userinfo = requests.get("https://canary.discordapp.com/api/v9/users/@me", headers=headers).json()
 username = userinfo["username"]
 discriminator = userinfo["discriminator"]
 userid = userinfo["id"]
