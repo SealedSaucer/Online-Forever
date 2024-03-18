@@ -79,7 +79,7 @@ def run_onliner():
     print(f"Logged in as {username}#{discriminator} ({userid}).")
     while True:
         onliner(usertoken, status)
-        time.sleep(30)
+        time.sleep(50)
 
 keep_alive()
 run_onliner()
