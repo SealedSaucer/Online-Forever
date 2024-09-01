@@ -57,6 +57,10 @@ You will need an user token inorder to use this code. You can obtain it by doing
 8. Run the repl
 9. Add your repl url to an uptime monitor ([Video](https://youtu.be/dVIjpCqnZXE))
 
+### · Docker
+
+This repository includes a `Dockerfile` and a `docker-compose.yml` file. Since pre-built images are not available, you'll need to build them yourself.
+
 ### · Local Installation
 1. Install [Python](https://python.org/downloads) on your machine (Make sure you add it to [PATH](https://i.imgur.com/Ukl6HdQ.png))
 2. Copy the code below
@@ -154,9 +158,6 @@ run_onliner()
 7. Save the file
 8. Open command prompt where both the files are present and run `pip install -r requirements.txt`
 9. Once the packages are downloaded, either double-click the python file in order to run it or open command prompt where the python file is present and run `python filename.py`
-
-### · Docker
-This repository provides `Dockerfile` and `docker-compose.yml`. There are no images available for now, so you will have to build it yourself
 
 ## Known Errors And How To Fix Them
 ### [Discord] Status mode not changing
