@@ -25,7 +25,7 @@ By using this code, you are automating your Discord Account. This is against Dis
 #### Giving your token to someone else will give them the ability to log into your account without the password or 2FA.
 
 ## Features
-- 🔒 Secure
+- Secure [🔒]
 - Supports Custom Status
 - Account will stay 24/7 online (if you set it up correctly)
 - Supports all three status modes (Online, Idle, Do Not Disturb)
@@ -43,7 +43,11 @@ You will need an user token inorder to use this code. You can obtain it by doing
 8. Scroll down till you see an entry named `Authorization`. Copy the line next to it.
 9. This is your token, <ins>**DO NOT GIVE IT TO ANYONE**</ins>.
 
-## Installation
+<p align="center">
+  <img height="10px" width="10000px" src="https://i.imgur.com/w6MUcN8.png"/>
+</p>
+
+## 🛠️ Installation
 ### · Replit
 #### The code inside the repository was originally made to be hostable on [Replit](https://replit.com), but due to a recent ban on all repositories that are against Discord's ToS, you won't be able to import this repository directly to Replit anymore.
 #### Here's a workaround to solve that issue:
@@ -159,58 +163,40 @@ run_onliner()
 8. Open command prompt where both the files are present and run `pip install -r requirements.txt`
 9. Once the packages are downloaded, either double-click the python file in order to run it or open command prompt where the python file is present and run `python filename.py`
 
-## Known Errors And How To Fix Them
-### [Discord] Status mode not changing
-<details>
-<summary>Click here to view the explanation and fix</summary>
-<br>
-Just wait for a few minutes. It takes some time for Discord to refresh your status.
-</details>
+<p align="center">
+  <img height="10px" width="10000px" src="https://i.imgur.com/w6MUcN8.png"/>
+</p>
+
+## 🔧 Known Errors And Fixes
+### [Discord] Status is not changing
+
+> Just wait for a few minutes. It takes some time for Discord to refresh your status.
 
 ### [Replit] This repository could not be accessed, try again later/This repository possibly violates our Terms of Service. Contact support if you believe this is a mistake.
-<details>
-<summary>Click here to view the explanation and fix</summary>
-<br>
-As I mentioned before, due to a recent ban on all repositories that are against Discord's ToS, you won't be able to import this repository directly to Replit anymore. Follow <a href="https://github.com/SealedSaucer/Online-Forever#heres-a-workaround-to-solve-that-issue">this</a> workaround to host the code on Replit.
-</details>
+
+> As I mentioned before, due to a recent ban on all repositories that are against Discord's ToS, you won't be able to import this repository directly to Replit anymore. Follow <a href="https://github.com/SealedSaucer/Online-Forever#heres-a-workaround-to-solve-that-issue">this</a> workaround to host the code on Replit.
 
 ### [Replit] sh: line 1: python3: command not found
-<details>
-<summary>Click here to view the explanation and fix</summary>
-<br>
-You cloned it into a bash repl. Make sure you select "Python" from the languages list when you create the repl.
-</details>
+
+> You cloned it into a bash repl. Make sure you select "Python" from the languages list when you create the repl.
 
 ### [Replit] Cloudflare Error/Temporarily banned from accessing Discord's API
-<details>
-<summary>Click here to view the explanation and fix</summary>
-<br>
-This happens because repls have Shared Public IP Addresses, and some Replit Users abuse the platform to spam (through self bots or nukers). Whenever Discord sees lots of invalid requests coming from a single IP address, it will use Cloudflare to temporarily block any incoming requests.
 
-#### Fix:
-- Go to shell
-- Enter <code>kill 1</code>
-- Wait for the repl to reload
-- Run the repl again
-</details>
+> This happens because repls have Shared Public IP Addresses, and some Replit Users abuse the platform to spam (through self bots or nukers). Whenever Discord sees lots of invalid requests coming from a single IP address, it will use Cloudflare to temporarily block any incoming requests.
 
-### [Replit] ModuleNotFoundError: No module named 'websocket'
-<details>
-<summary>Click here to view the explanation and fix</summary>
-<br>
-Run <code>pip install websocket</code> in the shell
-</details>
+> Fix:
+> - Go to shell
+> - Enter <code>kill 1</code>
+> - Wait for the repl to reload
+> - Run the repl again
 
-### [Replit] TypeError: WebSocket.__init() missing 3 required positional arguments: 'environ', 'socket', and 'rfile'
-<details>
-<summary>Click here to view the explanation and fix</summary>
-<br>
-Run <code>pip install websocket-client</code> in the shell
-</details>
+<p align="center">
+  <img height="10px" width="10000px" src="https://i.imgur.com/w6MUcN8.png"/>
+</p>
 
-## Help and Support
+## 🛟 Help and Support
 If you have any issues or doubts regarding this, feel free to [contact me](https://phantom.fr.to/verify).
 
 ---
 
-<p align="center">❤️ Online Forever is licensed under GNU General Public License.</p>
+<p align="center">Online Forever is licensed under GNU General Public License ❤️</p>
