@@ -1,4 +1,4 @@
 requests
-websocket
-websocket-client
+websockets
 Flask
+colorama
