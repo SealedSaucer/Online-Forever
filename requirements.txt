@@ -1,4 +1,4 @@
-requests
-websockets
 Flask
+requests
 colorama
+websockets
