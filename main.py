@@ -1,27 +1,28 @@
 import os
 import sys
 import json
+import asyncio
+import platform
 import requests
 import websockets
-import asyncio
 from colorama import init, Fore
 from keep_alive import keep_alive
 
 init(autoreset=True)
 
 status = "online"  # online/dnd/idle
-custom_status = "youtube.com/@SealedSaucer"  # Custom status
+custom_status = "youtube.com/@SealedSaucer"  # Custom Status
 
 usertoken = os.getenv("TOKEN")
 if not usertoken:
-    print(Fore.LIGHTRED_EX + "[ERROR] Please add a token inside Secrets.")
+    print(f"{Fore.WHITE}[{Fore.RED}-{Fore.WHITE}] Please add a token inside Secrets.")
     sys.exit()
 
 headers = {"Authorization": usertoken, "Content-Type": "application/json"}
 
 validate = requests.get("https://canary.discordapp.com/api/v9/users/@me", headers=headers)
 if validate.status_code != 200:
-    print(Fore.LIGHTRED_EX + "[ERROR] Your token might be invalid. Please check it again.")
+    print(f"{Fore.WHITE}[{Fore.RED}-{Fore.WHITE}] Your token might be invalid. Please check it again.")
     sys.exit()
 
 userinfo = requests.get("https://canary.discordapp.com/api/v9/users/@me", headers=headers).json()
@@ -58,8 +59,14 @@ async def onliner(token, status):
                         "state": custom_status,
                         "name": "Custom Status",
                         "id": "custom",
-                    }
-                ],
+                                #Uncomment the below lines if you want an emoji in the status
+                                #"emoji": {
+                                    #"name": "emoji name",
+                                    #"id": "emoji id",
+                                    #"animated": False,
+                                #},
+                            }
+                        ],
                 "status": status,
                 "afk": False,
             },
@@ -71,8 +78,11 @@ async def onliner(token, status):
         await ws.send(json.dumps(online))
 
 async def run_onliner():
-    os.system("cls")
-    print(Fore.LIGHTGREEN_EX + f"Logged in as {username}#{discriminator} ({userid}).")
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+    print(f"{Fore.WHITE}[{Fore.LIGHTGREEN_EX}+{Fore.WHITE}] Logged in as {Fore.LIGHTBLUE_EX}{username} {Fore.WHITE}({userid})!")
     while True:
         await onliner(usertoken, status)
         await asyncio.sleep(50)
