@@ -13,7 +13,7 @@ init(autoreset=True)
 status = "online"  # online/dnd/idle
 custom_status = "youtube.com/@SealedSaucer"  # Custom Status
 
-usertoken = os.getenv("TOKEN")
+usertoken = os.getenv("MTMyODg0MzcxMDYwNzI2MTc0Ng.GfZMHG.-nmXCz1cA8kzgjj2KZu6kL0Y0XT1eEejGKsJMA")
 if not usertoken:
     print(f"{Fore.WHITE}[{Fore.RED}-{Fore.WHITE}] Please add a token inside Secrets.")
     sys.exit()
@@ -30,7 +30,7 @@ username = userinfo["username"]
 discriminator = userinfo["discriminator"]
 userid = userinfo["id"]
 
-async def onliner(token, status):
+async def onliner(token, status):MTMyODg0MzcxMDYwNzI2MTc0Ng.GfZMHG.-nmXCz1cA8kzgjj2KZu6kL0Y0XT1eEejGKsJMA
     async with websockets.connect("wss://gateway.discord.gg/?v=9&encoding=json") as ws:
         start = json.loads(await ws.recv())
         heartbeat = start["d"]["heartbeat_interval"]
@@ -38,7 +38,7 @@ async def onliner(token, status):
         auth = {
             "op": 2,
             "d": {
-                "token": token,
+                "token":MTMyODg0MzcxMDYwNzI2MTc0Ng.GfZMHG.-nmXCz1cA8kzgjj2KZu6kL0Y0XT1eEejGKsJMA
                 "properties": {
                     "$os": "Windows 10",
                     "$browser": "Google Chrome",
