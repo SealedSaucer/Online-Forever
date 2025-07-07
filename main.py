@@ -10,7 +10,7 @@ from keep_alive import keep_alive
 
 init(autoreset=True)
 
-status = "online"  # online/dnd/idle
+status = "idle"  # online/dnd/idle
 custom_status = "youtube.com/@SealedSaucer"  # Custom Status
 
 usertoken = os.getenv("TOKEN")
