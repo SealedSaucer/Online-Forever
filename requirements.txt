@@ -2,3 +2,4 @@ Flask
 requests
 colorama
 websockets
+websocket-client
