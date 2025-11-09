@@ -2,7 +2,6 @@
     <h1>Online Forever</h1>
     <p>Make Your Discord Account 24/7 Online!</p>
     <a href="https://github.com/SealedSaucer/Online-Forever/blob/main/LICENSE"><img src="https://img.shields.io/github/license/SealedSaucer/Online-Forever?style=for-the-badge"></a>
-    <a href="https://phantom.fr.to/verify"><img src="https://img.shields.io/badge/contact-click me-05babf?style=for-the-badge"></a>
     <br>
     <img src="https://i.imgur.com/N61T21L.png" height="210">
 </div>
@@ -190,9 +189,6 @@ run_onliner()
 <p align="center">
   <img height="10px" width="10000px" src="https://i.imgur.com/w6MUcN8.png"/>
 </p>
-
-## 🛟 Help and Support
-If you have any issues or doubts regarding this, feel free to [contact me](https://phantom.fr.to/verify).
 
 ---
 
