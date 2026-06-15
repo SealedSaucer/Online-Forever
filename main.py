@@ -1,12 +1,18 @@
 import asyncio
 import json
+import os
 import requests
 import websockets
 
-TOKEN = "Add your token here"
-STATUS = "online"  # online / dnd / idle
-CUSTOM_STATUS = "Hey!"  # Leave empty if you don't want a custom status
-USE_EMOJI = False
+TOKEN = os.getenv("DISCORD_TOKEN")
+STATUS = os.getenv("STATUS", "dnd")  # online / dnd / idle
+CUSTOM_STATUS = os.getenv("CUSTOM_STATUS", "✅ 1.5$ Rust, cheatvault.net")  # Leave empty if you don't want a custom status
+USE_EMOJI = os.getenv("USE_EMOJI", "false").lower() == "true"
+
+if not TOKEN:
+    print("ERROR: DISCORD_TOKEN environment variable is not set!")
+    print("Please set your Discord token as an environment variable.")
+    exit()
 
 headers = {"Authorization": TOKEN}
 
@@ -35,7 +41,7 @@ if USE_EMOJI:
 async def discord_gateway():
     uri = "wss://gateway.discord.gg/?v=10&encoding=json"
 
-    async with websockets.connect(uri) as ws:
+    async with websockets.connect(uri, max_size=10 * 1024 * 1024) as ws:  # 10MB limit
         hello = json.loads(await ws.recv())
         heartbeat_interval = hello["d"]["heartbeat_interval"]
 
@@ -76,6 +82,9 @@ async def discord_gateway():
                 print("Connection lost, reconnecting...", e)
                 break
 
-while True:
-    asyncio.run(discord_gateway())
-    asyncio.sleep(5)
+async def main():
+    while True:
+        await discord_gateway()
+        await asyncio.sleep(5)
+
+asyncio.run(main())
