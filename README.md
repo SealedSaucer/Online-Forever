@@ -52,7 +52,7 @@ This value is your token. **Do not share it with anyone.**
 
 1. Install [Python](https://python.org/downloads) (make sure to add it to [PATH](https://i.imgur.com/Ukl6HdQ.png) during setup).
 2. Download this repository and extract it.
-3. Open `main.py` and set your status mode and custom status as desired.
+3. Open `main.py` and go to the **config** section, and edit desired values.
 5. Save the file.
 5. Open a terminal in the extracted folder and run:
    ```
