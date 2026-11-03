@@ -1,9 +1,10 @@
 import asyncio
 import json
+import os
 import requests
 import websockets
 
-TOKEN = "Add your token here"
+TOKEN = os.getenv("token")
 STATUS = "online"  # online / dnd / idle
 CUSTOM_STATUS = "Hey!"  # Leave empty if you don't want a custom status
 USE_EMOJI = False
